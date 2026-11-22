@@ -37,12 +37,12 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md border-b border-gray-200/80 py-3 shadow-xs'
-          : 'bg-transparent py-4 sm:py-5'
+          ? 'bg-white/95 backdrop-blur-md border-b border-gray-200/80 py-2.5 sm:py-3 shadow-xs'
+          : 'bg-transparent py-3 sm:py-5'
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-3 lg:gap-4 xl:gap-8">
           
           {/* IVORRA Brand Logo */}
           <a
@@ -51,24 +51,24 @@ export default function Navbar() {
               e.preventDefault()
               handleNavClick('#hero')
             }}
-            className="flex items-center shrink-0 group cursor-pointer py-1"
+            className="flex items-center shrink-0 mr-2 sm:mr-4 lg:mr-6 xl:mr-8 group cursor-pointer py-1"
           >
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA Official Logo"
-              className="h-[22px] sm:h-[25px] md:h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+              className="h-[20px] sm:h-[23px] md:h-6 xl:h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
               width={140}
               height={28}
             />
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden lg:flex items-center gap-2.5 xl:gap-5 2xl:gap-7 shrink-0">
             {navItems.map((item) => (
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.href)}
-                className="text-xs uppercase tracking-[0.16em] font-semibold text-gray-700 hover:text-gray-950 transition-colors cursor-pointer py-1 relative group"
+                className="whitespace-nowrap text-[10.5px] xl:text-xs uppercase tracking-[0.10em] xl:tracking-[0.14em] font-bold text-gray-700 hover:text-gray-950 transition-colors cursor-pointer py-1 px-1 relative group shrink-0"
               >
                 <span>{item.label}</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B89758] group-hover:w-full transition-all duration-200" />
@@ -77,12 +77,12 @@ export default function Navbar() {
           </nav>
 
           {/* Direct Store Action */}
-          <div className="hidden sm:flex items-center gap-3 shrink-0">
+          <div className="hidden sm:flex items-center gap-3 shrink-0 ml-2 sm:ml-4 lg:ml-6 xl:ml-8">
             <a
               href={BRAND_INFO.officialWebsite}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 px-4 py-2 text-xs uppercase tracking-wider font-semibold text-gray-900 bg-white border border-gray-200 rounded-full hover:border-gray-950 hover:shadow-xs transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 xl:px-4 xl:py-2 text-[11px] xl:text-xs uppercase tracking-wider font-bold text-gray-900 bg-white border border-gray-200 rounded-full hover:border-gray-950 hover:shadow-xs transition-all duration-200 cursor-pointer whitespace-nowrap"
             >
               <span>Visit ivorra.in</span>
               <ArrowUpRight className="w-3.5 h-3.5 text-[#B89758]" />
