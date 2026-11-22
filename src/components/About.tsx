@@ -23,10 +23,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-6"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[686/1024] max-h-[660px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[686/1024] max-h-[700px]">
               <img
                 src={BRAND_INFO.editorialModel}
-                alt="IVORRA: The Perfect Blend of Tradition & Trend"
+                alt="IVORRA: Signature Jewellery Showcase"
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
