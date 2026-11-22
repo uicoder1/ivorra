@@ -16,7 +16,7 @@ export default function App() {
   const [toastMessage, setToastMessage] = useState<string | null>(null)
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-[#111827] selection:bg-[#9B783E]/20 selection:text-[#111827]">
+    <div className="min-h-screen bg-[#FAFAFA] text-[#111827] selection:bg-[#B89758]/20 selection:text-[#111827]">
       {/* Sticky Navigation */}
       <Navbar />
 

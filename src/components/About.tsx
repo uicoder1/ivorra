@@ -23,13 +23,15 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-6"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[2/3] max-h-[660px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[686/1024] max-h-[660px]">
               <img
                 src={BRAND_INFO.editorialModel}
                 alt="IVORRA: The Perfect Blend of Tradition & Trend"
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
+                width={686}
+                height={1024}
               />
             </div>
           </motion.div>
@@ -86,7 +88,7 @@ export default function About() {
             <div>
               <a
                 href="#collections"
-                className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-gray-950 hover:text-[#9B783E] transition-colors"
+                className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-gray-950 hover:text-[#B89758] transition-colors"
               >
                 <span>Explore the collections</span>
                 <span className="text-sm">→</span>

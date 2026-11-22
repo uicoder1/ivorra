@@ -82,15 +82,17 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.35 }}
-          className="relative max-w-5xl mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-md border border-gray-200 bg-white aspect-[16/9] sm:aspect-[21/9]"
+          className="relative max-w-5xl mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-md border border-gray-200 bg-white"
         >
           <img
             src={BRAND_INFO.heroBanner}
             alt="IVORRA Fashion Jewellery Lifestyle Campaign"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto block object-contain"
             loading="eager"
             fetchPriority="high"
             decoding="async"
+            width={2048}
+            height={768}
           />
         </motion.div>
 
@@ -120,7 +122,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-gray-200 text-xs uppercase tracking-widest font-bold text-gray-700 hover:text-gray-950 hover:border-gray-400 shadow-2xs transition-all cursor-pointer"
           >
             <span>Scroll</span>
-            <ArrowDown className="w-3.5 h-3.5 text-[#9B783E]" />
+            <ArrowDown className="w-3.5 h-3.5 text-[#B89758]" />
           </button>
         </div>
 

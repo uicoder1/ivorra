@@ -90,7 +90,7 @@ export default function Marketplaces() {
                     <span className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-gray-900 font-bold">
                       <span className="w-2 h-2 rounded-full bg-emerald-500" />
                       <span>Live</span>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[#9B783E] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[#B89758] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </span>
                   ) : (
                     <span className="text-[10px] uppercase tracking-wider text-gray-600 bg-gray-100 border border-gray-200 px-2.5 py-0.5 rounded-full font-bold">
@@ -103,7 +103,7 @@ export default function Marketplaces() {
                 <div className="my-auto py-3">
                   {item.logoType === 'amazon' && (
                     <div className="font-sans font-bold text-2xl sm:text-3xl text-gray-950 tracking-tight">
-                      amazon<span className="text-sm text-[#9B783E]">.in</span>
+                      amazon<span className="text-sm text-[#B89758]">.in</span>
                     </div>
                   )}
                   {item.logoType === 'flipkart' && (
@@ -154,7 +154,7 @@ export default function Marketplaces() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="group relative rounded-2xl bg-white border border-gray-200 hover:border-[#9B783E] hover:shadow-md transition-all duration-200 flex flex-col cursor-pointer"
+                  className="group relative rounded-2xl bg-white border border-gray-200 hover:border-[#B89758] hover:shadow-md transition-all duration-200 flex flex-col cursor-pointer"
                 >
                   {content}
                 </motion.a>
