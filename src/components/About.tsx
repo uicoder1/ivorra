@@ -23,10 +23,10 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-6"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[4/5]">
+            <div className="relative rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-gray-50 aspect-[3/4] sm:aspect-[4/5] lg:aspect-[2/3] max-h-[620px]">
               <img
                 src={BRAND_INFO.editorialModel}
-                alt="IVORRA Fashion Jewellery Campaign Portrait"
+                alt="IVORRA Signature Red Velvet Earring Curation"
                 className="w-full h-full object-cover object-center"
                 loading="lazy"
                 decoding="async"
