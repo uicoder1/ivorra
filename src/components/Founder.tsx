@@ -14,13 +14,13 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
               Executive Leadership
             </p>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight mb-4">
-            The Vision Behind <span className="italic text-[#9B783E]">IVORRA</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight leading-[1.14] mb-4">
+            The Vision Behind <span className="text-[#B89758]">IVORRA</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-700 font-normal leading-relaxed">
             Leading the transformation of contemporary Indian fashion jewellery through artisan craftsmanship, quality assurance, and nationwide omnichannel accessibility.
@@ -52,10 +52,10 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
               {/* Verified Executive Credential Badge */}
               <div className="mt-3 px-3 py-2 flex items-center justify-between text-xs text-amber-200/90 bg-black/40 rounded-xl border border-white/5">
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-[#C6A675]" />
+                  <ShieldCheck className="w-4 h-4 text-[#B89758]" />
                   <span className="font-semibold tracking-wide text-white">Verified Founder Identity</span>
                 </div>
-                <span className="text-[10px] uppercase tracking-widest text-[#C6A675] font-bold">
+                <span className="text-[10px] uppercase tracking-widest text-[#B89758] font-bold">
                   Karol Bagh, New Delhi
                 </span>
               </div>
@@ -72,20 +72,20 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
           >
             {/* Name & Title */}
             <div className="mb-5">
-              <span className="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-full bg-amber-50 text-[#9B783E] border border-amber-200">
+              <span className="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-full bg-amber-50 text-[#B89758] border border-amber-200">
                 Founder & Chief Executive Officer
               </span>
-              <h3 className="font-serif text-3xl sm:text-4xl text-gray-950 font-medium tracking-tight mt-3 mb-1">
+              <h3 className="text-3xl sm:text-4xl text-black font-bold tracking-tight mt-3 mb-1">
                 {BRAND_INFO.founder}
               </h3>
-              <p className="text-xs uppercase tracking-widest text-[#9B783E] font-bold">
+              <p className="text-xs uppercase tracking-widest text-[#B89758] font-bold">
                 IVORRA Fashion Jewellery • Active since {BRAND_INFO.foundedYear}
               </p>
             </div>
 
             {/* Founder's Vision Quote */}
             <div className="p-5 sm:p-6 rounded-2xl bg-gray-50 border border-gray-200 mb-6 relative">
-              <span className="text-4xl font-serif text-[#C6A675] absolute top-2 left-4 select-none opacity-40">“</span>
+              <span className="text-4xl font-serif text-[#B89758] absolute top-2 left-4 select-none opacity-40">“</span>
               <p className="text-sm text-gray-800 leading-relaxed font-normal pt-2 italic">
                 IVORRA was founded with a singular conviction: to bridge timeless Indian craftsmanship with trend-forward contemporary designs. We believe fine fashion jewellery should not remain locked away for rare occasions — it belongs in everyday self-expression, accessible to women across India.
               </p>
@@ -94,7 +94,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
             {/* Direct Official Corporate Details */}
             <div className="space-y-3 mb-8 text-xs text-gray-700">
               <div className="flex items-start gap-3 p-3 rounded-xl bg-white border border-gray-200 shadow-2xs">
-                <MapPin className="w-4 h-4 text-[#9B783E] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#B89758] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-gray-950 block">Corporate Head Office</span>
                   <span className="text-gray-600 leading-tight block">
@@ -108,7 +108,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
                   href={`tel:${BRAND_INFO.phone}`}
                   className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all"
                 >
-                  <Phone className="w-4 h-4 text-[#9B783E] shrink-0" />
+                  <Phone className="w-4 h-4 text-[#B89758] shrink-0" />
                   <div>
                     <span className="font-bold text-gray-950 block">Direct Telephone</span>
                     <span className="text-gray-600">{BRAND_INFO.displayPhone}</span>
@@ -119,7 +119,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
                   href={`mailto:${BRAND_INFO.email}`}
                   className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all"
                 >
-                  <Mail className="w-4 h-4 text-[#9B783E] shrink-0" />
+                  <Mail className="w-4 h-4 text-[#B89758] shrink-0" />
                   <div>
                     <span className="font-bold text-gray-950 block">Official Email</span>
                     <span className="text-gray-600 truncate block">{BRAND_INFO.email}</span>
@@ -132,7 +132,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
             <div className="flex flex-col sm:flex-row items-center gap-3">
               <button
                 onClick={onOpenInquiry}
-                className="w-full sm:w-auto px-7 py-3 bg-gray-950 hover:bg-[#9B783E] text-white text-xs uppercase tracking-widest font-semibold rounded-full transition-colors cursor-pointer shadow-sm text-center"
+                className="w-full sm:w-auto px-7 py-3 bg-gray-950 hover:bg-[#B89758] text-white text-xs uppercase tracking-widest font-semibold rounded-full transition-colors cursor-pointer shadow-sm text-center"
               >
                 Executive & Investor Enquiry
               </button>
@@ -143,7 +143,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 py-3 border border-gray-300 hover:border-gray-950 text-gray-900 text-xs uppercase tracking-widest font-semibold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
-                <svg className="w-3.5 h-3.5 fill-current text-[#9B783E]" viewBox="0 0 24 24">
+                <svg className="w-3.5 h-3.5 fill-current text-[#B89758]" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
                 <span>Follow @ivorra_official</span>

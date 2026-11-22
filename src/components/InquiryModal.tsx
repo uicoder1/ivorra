@@ -52,21 +52,21 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
         </button>
 
         <div className="p-8 sm:p-10">
-          <p className="text-[10px] uppercase tracking-[0.24em] text-[#A5844E] font-medium mb-2">
+          <p className="text-[10px] uppercase tracking-[0.24em] text-[#B89758] font-bold mb-2">
             Official Brand Enquiry
           </p>
 
-          <h3 className="font-serif text-2xl sm:text-3xl text-[#211D1A] font-normal leading-tight mb-2">
+          <h3 className="text-2xl sm:text-3xl text-black font-bold tracking-tight leading-tight mb-2">
             Connect with IVORRA
           </h3>
 
-          <p className="text-xs sm:text-sm text-[#534D47] font-light leading-relaxed mb-6">
+          <p className="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed mb-6">
             For retail partnerships, corporate gifting, media inquiries, or brand questions.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-[11px] uppercase tracking-wider font-medium text-[#211D1A] mb-1.5">
+              <label className="block text-[11px] uppercase tracking-wider font-semibold text-gray-950 mb-1.5">
                 Full Name
               </label>
               <input
@@ -75,12 +75,12 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="e.g. Priya Sharma"
-                className="w-full px-4 py-2.5 rounded-xl border border-[#DFD8CA] bg-white text-xs text-[#211D1A] focus:outline-none focus:border-[#C6A675] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-xs text-black focus:outline-none focus:border-[#B89758] transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] uppercase tracking-wider font-medium text-[#211D1A] mb-1.5">
+              <label className="block text-[11px] uppercase tracking-wider font-semibold text-gray-950 mb-1.5">
                 Email Address
               </label>
               <input
@@ -89,18 +89,18 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@domain.com"
-                className="w-full px-4 py-2.5 rounded-xl border border-[#DFD8CA] bg-white text-xs text-[#211D1A] focus:outline-none focus:border-[#C6A675] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-xs text-black focus:outline-none focus:border-[#B89758] transition-colors"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] uppercase tracking-wider font-medium text-[#211D1A] mb-1.5">
+              <label className="block text-[11px] uppercase tracking-wider font-semibold text-gray-950 mb-1.5">
                 Enquiry Subject
               </label>
               <select
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
-                className="w-full px-4 py-2.5 rounded-xl border border-[#DFD8CA] bg-white text-xs text-[#211D1A] focus:outline-none focus:border-[#C6A675] transition-colors"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-xs text-black focus:outline-none focus:border-[#B89758] transition-colors"
               >
                 <option value="Investor & Retail Relations">Investor &amp; Retail Relations</option>
                 <option value="Brand Collaboration">Brand Collaboration</option>
@@ -112,7 +112,7 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
             </div>
 
             <div>
-              <label className="block text-[11px] uppercase tracking-wider font-medium text-[#211D1A] mb-1.5">
+              <label className="block text-[11px] uppercase tracking-wider font-semibold text-gray-950 mb-1.5">
                 Message
               </label>
               <textarea
@@ -121,23 +121,23 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Your message..."
-                className="w-full px-4 py-2.5 rounded-xl border border-[#DFD8CA] bg-white text-xs text-[#211D1A] focus:outline-none focus:border-[#C6A675] transition-colors resize-none"
+                className="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-white text-xs text-black focus:outline-none focus:border-[#B89758] transition-colors resize-none"
               />
             </div>
 
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3.5 px-6 rounded-full bg-[#211D1A] hover:bg-[#A5844E] text-[#F8F5EF] text-xs uppercase tracking-wider font-medium flex items-center justify-center gap-2 transition-colors cursor-pointer mt-2"
+              className="w-full py-3.5 px-6 rounded-full bg-black hover:bg-[#B89758] text-white text-xs uppercase tracking-wider font-bold flex items-center justify-center gap-2 transition-colors cursor-pointer mt-2"
             >
               <Send className="w-3.5 h-3.5" />
               <span>{isSubmitting ? 'Sending...' : 'Submit Enquiry'}</span>
             </button>
           </form>
 
-          <div className="mt-6 pt-4 border-t border-[#E8E2D6] flex items-center gap-2 text-[11px] text-[#7A726A]">
-            <MapPin className="w-3.5 h-3.5 text-[#C6A675]" />
-            <span>South Delhi – 110014, India</span>
+          <div className="mt-6 pt-4 border-t border-gray-200 flex items-center gap-2 text-[11px] text-gray-600">
+            <MapPin className="w-3.5 h-3.5 text-[#B89758]" />
+            <span>10203, 4th Floor, Padam Singh Road, Karol Bagh, New Delhi – 110005</span>
           </div>
 
         </div>

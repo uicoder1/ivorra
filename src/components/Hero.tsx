@@ -29,7 +29,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-gray-200 shadow-2xs mb-4"
           >
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
             <span className="text-[11px] uppercase tracking-[0.22em] font-bold text-gray-700">
               Contemporary Fashion Jewellery
             </span>
@@ -39,10 +39,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal text-gray-950 tracking-tight leading-[1.08] mb-5"
+            className="text-4xl sm:text-6xl lg:text-7xl font-bold text-black tracking-tight leading-[1.08] mb-5"
           >
             Jewellery That <br />
-            <span className="italic text-[#9B783E]">Defines Your</span> Elegance.
+            <span className="text-[#B89758]">Defines Your</span> Elegance.
           </motion.h1>
 
           <motion.p
@@ -63,14 +63,14 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollTo('#about')}
-              className="w-full sm:w-auto px-8 py-3.5 bg-gray-950 text-white text-xs uppercase tracking-[0.18em] font-semibold rounded-full hover:bg-[#9B783E] transition-colors duration-200 shadow-sm cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 bg-black text-white text-xs uppercase tracking-[0.18em] font-bold rounded-full hover:bg-[#B89758] transition-colors duration-200 shadow-sm cursor-pointer"
             >
               About IVORRA
             </button>
 
             <button
               onClick={() => scrollTo('#collections')}
-              className="w-full sm:w-auto px-8 py-3.5 bg-white border border-gray-300 text-gray-900 text-xs uppercase tracking-[0.18em] font-semibold rounded-full hover:border-gray-950 hover:bg-gray-50 transition-all duration-200 shadow-2xs cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 bg-white border border-gray-300 text-black text-xs uppercase tracking-[0.18em] font-bold rounded-full hover:border-black hover:bg-gray-50 transition-all duration-200 shadow-2xs cursor-pointer"
             >
               Explore Collections
             </button>

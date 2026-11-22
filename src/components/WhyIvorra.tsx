@@ -51,13 +51,13 @@ export default function WhyIvorra() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
               The IVORRA Standard
             </p>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight">
-            Designed for <span className="italic text-[#9B783E]">Every Occasion.</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight leading-[1.14]">
+            Designed for <span className="text-[#B89758]">Every Occasion.</span>
           </h2>
         </div>
 
@@ -75,10 +75,10 @@ export default function WhyIvorra() {
                 className="p-6 rounded-2xl bg-white border border-gray-200 shadow-xs flex flex-col justify-between"
               >
                 <div>
-                  <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-[#9B783E] mb-5">
-                    <Icon className="w-4 h-4 text-[#9B783E]" />
+                  <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center text-[#B89758] mb-5">
+                    <Icon className="w-4 h-4 text-[#B89758]" />
                   </div>
-                  <h3 className="font-serif text-lg sm:text-xl text-gray-950 font-medium mb-2">
+                  <h3 className="text-lg sm:text-xl text-black font-bold mb-2">
                     {item.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed">

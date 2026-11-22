@@ -13,21 +13,21 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
   const verifiedStores = MARKETPLACES.filter(m => m.verified)
 
   return (
-    <footer id="contact" className="bg-[#211D1A] text-[#F8F5EF] pt-20 pb-12 border-t border-[#36302B]">
+    <footer id="contact" className="bg-[#121212] text-[#F8F5EF] pt-20 pb-12 border-t border-neutral-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Final CTA Block */}
         <div className="text-center max-w-2xl mx-auto mb-16 sm:mb-20">
-          <p className="text-xs uppercase tracking-[0.24em] text-[#C6A675] font-semibold mb-3">
+          <p className="text-xs uppercase tracking-[0.24em] text-[#B89758] font-bold mb-3">
             Begin Your Journey
           </p>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-normal text-white tracking-tight mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold text-white tracking-tight mb-4 leading-tight">
             Discover Your Style. <br />
-            <span className="italic text-[#C6A675]">Discover IVORRA.</span>
+            <span className="text-[#B89758]">Discover IVORRA.</span>
           </h2>
 
-          <p className="text-sm sm:text-base text-[#DFD8CA] font-light max-w-md mx-auto mb-8">
+          <p className="text-sm sm:text-base text-neutral-300 font-normal max-w-md mx-auto mb-8">
             Explore our latest collections online or connect with our team for brand, retail, and investor enquiries.
           </p>
 
@@ -36,7 +36,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
               href={BRAND_INFO.officialWebsite}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-3.5 bg-[#C6A675] hover:bg-[#DFC8A7] text-[#211D1A] text-xs uppercase tracking-[0.18em] font-semibold rounded-full transition-colors flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
+              className="w-full sm:w-auto px-8 py-3.5 bg-[#B89758] hover:bg-[#A88456] text-black text-xs uppercase tracking-[0.18em] font-bold rounded-full transition-colors flex items-center justify-center gap-1.5 cursor-pointer shadow-sm"
             >
               <span>Explore IVORRA</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
@@ -44,7 +44,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
 
             <button
               onClick={onOpenInquiry}
-              className="w-full sm:w-auto px-8 py-3.5 border border-[#534D47] hover:border-[#C6A675] hover:bg-white/5 text-[#F8F5EF] text-xs uppercase tracking-[0.18em] font-medium rounded-full transition-colors cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3.5 border border-neutral-700 hover:border-[#B89758] hover:bg-white/5 text-white text-xs uppercase tracking-[0.18em] font-semibold rounded-full transition-colors cursor-pointer"
             >
               Corporate Enquiry
             </button>
@@ -52,7 +52,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
         </div>
 
         {/* Clean Corporate Footer Details */}
-        <div className="pt-12 border-t border-[#36302B] grid grid-cols-1 md:grid-cols-12 gap-10 text-xs text-[#DFD8CA]">
+        <div className="pt-12 border-t border-neutral-800 grid grid-cols-1 md:grid-cols-12 gap-10 text-xs text-neutral-300">
           
           {/* Brand & Address Column */}
           <div className="md:col-span-5">
@@ -65,41 +65,41 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
                 decoding="async"
               />
             </div>
-            <p className="text-[#C6A675] uppercase tracking-wider text-[11px] mb-3 font-semibold">
+            <p className="text-[#B89758] uppercase tracking-wider text-[11px] mb-3 font-bold">
               India's Leading Fashion Jewellery Brand
             </p>
-            <p className="text-[#A5844E]/80 font-light leading-relaxed max-w-sm mb-4">
+            <p className="text-neutral-400 font-normal leading-relaxed max-w-sm mb-4">
               Modern and contemporary fashion jewellery designed for everyday grace, festive celebrations, and personal self-expression.
             </p>
-            <div className="space-y-1 text-[#DFD8CA]/90 text-[11px] border-t border-[#36302B] pt-3">
-              <p className="font-semibold text-white">Mr. Ahmed — Founder & CEO</p>
-              <p className="text-[#A5844E]">10203, 4th Floor, Padam Singh Road, Karol Bagh, New Delhi – 110005</p>
-              <p className="text-[#DFD8CA]/80">
-                <a href="tel:8920866006" className="hover:text-[#C6A675] transition-colors">+91 89208 66006</a> • <a href="mailto:ahmed.legacy05@gmail.com" className="hover:text-[#C6A675] transition-colors">ahmed.legacy05@gmail.com</a>
+            <div className="space-y-1 text-neutral-300 text-[11px] border-t border-neutral-800 pt-3">
+              <p className="font-bold text-white">Mr. Ahmed — Founder & CEO</p>
+              <p className="text-[#B89758]">10203, 4th Floor, Padam Singh Road, Karol Bagh, New Delhi – 110005</p>
+              <p className="text-neutral-400">
+                <a href="tel:8920866006" className="hover:text-[#B89758] transition-colors">+91 89208 66006</a> • <a href="mailto:ahmed.legacy05@gmail.com" className="hover:text-[#B89758] transition-colors">ahmed.legacy05@gmail.com</a>
               </p>
-              <p className="text-[#7A726A] pt-1">Active since 2024 • Made with Pride in India</p>
+              <p className="text-neutral-500 pt-1">Active since 2024 • Made with Pride in India</p>
             </div>
           </div>
 
           {/* Quick Nav Links */}
           <div className="md:col-span-3">
-            <h4 className="text-[11px] uppercase tracking-widest font-semibold text-white mb-4">
+            <h4 className="text-[11px] uppercase tracking-widest font-bold text-white mb-4">
               Navigation
             </h4>
             <ul className="space-y-2.5">
-              <li><a href="#hero" className="hover:text-[#C6A675] transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-[#C6A675] transition-colors">About IVORRA</a></li>
-              <li><a href="#collections" className="hover:text-[#C6A675] transition-colors">Our Collections</a></li>
-              <li><a href="#marketplaces" className="hover:text-[#C6A675] transition-colors">Marketplaces</a></li>
-              <li><a href="#reviews" className="hover:text-[#C6A675] transition-colors">Customer Reviews</a></li>
-              <li><a href="#founder" className="hover:text-[#C6A675] transition-colors">Executive Leadership</a></li>
-              <li><a href="#why-ivorra" className="hover:text-[#C6A675] transition-colors">Why IVORRA</a></li>
+              <li><a href="#hero" className="hover:text-[#B89758] transition-colors">Home</a></li>
+              <li><a href="#about" className="hover:text-[#B89758] transition-colors">About IVORRA</a></li>
+              <li><a href="#collections" className="hover:text-[#B89758] transition-colors">Our Collections</a></li>
+              <li><a href="#marketplaces" className="hover:text-[#B89758] transition-colors">Marketplaces</a></li>
+              <li><a href="#reviews" className="hover:text-[#B89758] transition-colors">Customer Reviews</a></li>
+              <li><a href="#founder" className="hover:text-[#B89758] transition-colors">Executive Leadership</a></li>
+              <li><a href="#why-ivorra" className="hover:text-[#B89758] transition-colors">Why IVORRA</a></li>
             </ul>
           </div>
 
           {/* Marketplaces & Social Links */}
           <div className="md:col-span-4">
-            <h4 className="text-[11px] uppercase tracking-widest font-semibold text-white mb-4">
+            <h4 className="text-[11px] uppercase tracking-widest font-bold text-white mb-4">
               Official Presence
             </h4>
             <ul className="space-y-2.5 mb-6">
@@ -109,10 +109,10 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
                     href={store.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-[#C6A675] transition-colors flex items-center justify-between group"
+                    className="hover:text-[#B89758] transition-colors flex items-center justify-between group"
                   >
                     <span>{store.name}</span>
-                    <ArrowUpRight className="w-3 h-3 text-[#7A726A] group-hover:text-[#C6A675] transition-colors" />
+                    <ArrowUpRight className="w-3 h-3 text-neutral-500 group-hover:text-[#B89758] transition-colors" />
                   </a>
                 </li>
               ))}
@@ -123,7 +123,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
                 href={BRAND_INFO.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C6A675] transition-colors flex items-center gap-1.5"
+                className="hover:text-[#B89758] transition-colors flex items-center gap-1.5"
                 aria-label="Instagram"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -136,7 +136,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
                 href={BRAND_INFO.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#C6A675] transition-colors flex items-center gap-1.5"
+                className="hover:text-[#B89758] transition-colors flex items-center gap-1.5"
                 aria-label="LinkedIn"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -150,14 +150,14 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 mt-8 border-t border-[#36302B] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#7A726A]">
+        <div className="pt-8 mt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
           <p>&copy; 2026 IVORRA. All rights reserved.</p>
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1 hover:text-[#F8F5EF] transition-colors cursor-pointer"
+            className="flex items-center gap-1 hover:text-white transition-colors cursor-pointer"
           >
             <span>Back to top</span>
-            <ArrowUp className="w-3 h-3 text-[#C6A675]" />
+            <ArrowUp className="w-3 h-3 text-[#B89758]" />
           </button>
         </div>
 

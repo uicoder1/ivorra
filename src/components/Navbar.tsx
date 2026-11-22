@@ -71,7 +71,7 @@ export default function Navbar() {
                 className="text-xs uppercase tracking-[0.16em] font-semibold text-gray-700 hover:text-gray-950 transition-colors cursor-pointer py-1 relative group"
               >
                 <span>{item.label}</span>
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#9B783E] group-hover:w-full transition-all duration-200" />
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#B89758] group-hover:w-full transition-all duration-200" />
               </button>
             ))}
           </nav>
@@ -85,14 +85,14 @@ export default function Navbar() {
               className="inline-flex items-center gap-1.5 px-4 py-2 text-xs uppercase tracking-wider font-semibold text-gray-900 bg-white border border-gray-200 rounded-full hover:border-gray-950 hover:shadow-xs transition-all duration-200 cursor-pointer"
             >
               <span>Visit ivorra.in</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#9B783E]" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-[#B89758]" />
             </a>
           </div>
 
           {/* Mobile Hamburger Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-900 hover:text-[#9B783E] transition-colors cursor-pointer shrink-0"
+            className="lg:hidden p-2 text-gray-900 hover:text-[#B89758] transition-colors cursor-pointer shrink-0"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}

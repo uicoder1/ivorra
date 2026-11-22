@@ -85,13 +85,13 @@ export default function CustomerReviews() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
               Marketplace Validation
             </p>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight mb-4">
-            Real Reviews From <span className="italic text-[#9B783E]">Real Buyers.</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight leading-[1.14] mb-4">
+            Real Reviews From <span className="text-[#B89758]">Real Buyers.</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-700 font-normal leading-relaxed">
             Verified customer testimonials and ratings across leading Indian shopping platforms confirming IVORRA's craftsmanship and quality.
@@ -107,7 +107,7 @@ export default function CustomerReviews() {
           className="max-w-4xl mx-auto mb-12 p-5 sm:p-6 rounded-2xl bg-white border border-gray-200 shadow-sm grid grid-cols-2 md:grid-cols-4 gap-4 text-center"
         >
           <div>
-            <p className="text-2xl sm:text-3xl font-serif text-gray-950 font-normal mb-0.5">
+            <p className="text-2xl sm:text-3xl font-bold text-black tracking-tight mb-0.5">
               4.4 <span className="text-amber-500 text-lg">★</span>
             </p>
             <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-gray-500 font-semibold">
@@ -115,7 +115,7 @@ export default function CustomerReviews() {
             </p>
           </div>
           <div>
-            <p className="text-2xl sm:text-3xl font-serif text-gray-950 font-normal mb-0.5">
+            <p className="text-2xl sm:text-3xl font-bold text-black tracking-tight mb-0.5">
               100+
             </p>
             <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-gray-500 font-semibold">
@@ -123,7 +123,7 @@ export default function CustomerReviews() {
             </p>
           </div>
           <div>
-            <p className="text-2xl sm:text-3xl font-serif text-gray-950 font-normal mb-0.5">
+            <p className="text-2xl sm:text-3xl font-bold text-black tracking-tight mb-0.5">
               100%
             </p>
             <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-gray-500 font-semibold">
@@ -131,7 +131,7 @@ export default function CustomerReviews() {
             </p>
           </div>
           <div>
-            <p className="text-2xl sm:text-3xl font-serif text-gray-950 font-normal mb-0.5">
+            <p className="text-2xl sm:text-3xl font-bold text-black tracking-tight mb-0.5">
               Pan-India
             </p>
             <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-gray-500 font-semibold">
@@ -173,7 +173,7 @@ export default function CustomerReviews() {
                 </div>
 
                 {/* Review Headline & Text */}
-                <h3 className="font-serif text-lg sm:text-xl font-medium text-gray-950 mb-2 leading-snug">
+                <h3 className="text-lg sm:text-xl font-bold text-black mb-2 leading-snug">
                   "{review.title}"
                 </h3>
                 <p className="text-sm text-gray-700 leading-relaxed font-normal mb-5">
@@ -198,7 +198,7 @@ export default function CustomerReviews() {
                   className="group/btn inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-50 hover:bg-gray-100 border border-gray-200 text-[11px] font-semibold text-gray-700 transition-colors cursor-pointer"
                   title="Click to view full cropped marketplace review proof"
                 >
-                  <ZoomIn className="w-3 h-3 text-[#9B783E]" />
+                  <ZoomIn className="w-3 h-3 text-[#B89758]" />
                   <span>View Proof Crop</span>
                 </button>
               </div>

@@ -61,13 +61,13 @@ export default function Collections() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
               Product Architecture
             </p>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight">
-            Explore the World of <span className="italic text-[#9B783E]">IVORRA</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight">
+            Explore the World of <span className="text-[#B89758]">IVORRA</span>
           </h2>
         </div>
 
@@ -99,7 +99,7 @@ export default function Collections() {
               </div>
 
               {/* Simple Category Name & One Short Description */}
-              <h3 className="font-serif text-xl sm:text-2xl text-gray-950 font-medium mb-1.5 group-hover:text-[#9B783E] transition-colors">
+              <h3 className="text-lg sm:text-xl font-bold text-black mb-1.5 group-hover:text-[#B89758] transition-colors">
                 {item.name}
               </h3>
               <p className="text-xs sm:text-sm text-gray-600 font-normal leading-relaxed">

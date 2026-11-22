@@ -43,15 +43,15 @@ export default function About() {
             className="lg:col-span-6 flex flex-col justify-center"
           >
             <div className="inline-flex items-center gap-2 mb-3">
-              <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-              <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+              <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+              <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
                 Brand Overview
               </p>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight leading-[1.14] mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight leading-[1.14] mb-6">
               More Than Jewellery. <br />
-              <span className="italic text-[#9B783E]">It's an Expression.</span>
+              <span className="text-[#B89758]">It's an Expression.</span>
             </h2>
 
             <div className="space-y-4 text-sm sm:text-base text-gray-700 font-normal leading-relaxed">

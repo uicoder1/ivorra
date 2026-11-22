@@ -61,13 +61,13 @@ export default function Marketplaces() {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-2 h-2 rounded-full bg-[#9B783E]" />
-            <p className="text-[11px] uppercase tracking-[0.22em] text-[#9B783E] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#B89758]" />
+            <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
               Retail Distribution
             </p>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-950 tracking-tight mb-4">
-            IVORRA, Across Your <span className="italic text-[#9B783E]">Favourite Marketplaces.</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black tracking-tight mb-4">
+            IVORRA, Across Your <span className="text-[#B89758]">Favourite Marketplaces.</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-600 font-normal leading-relaxed">
             Discover and shop IVORRA collections across leading online shopping platforms.

@@ -1,34 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ivory: #FAFAFA;
-  --color-ivory-warm: #F4F4F5;
+  --color-ivory: #FFFFFF;
+  --color-ivory-warm: #F9FAFB;
   --color-ivory-surface: #FFFFFF;
   --color-sand: #E5E7EB;
   --color-sand-light: #F3F4F6;
   --color-sand-muted: #D1D5DB;
-  --color-gold: #9B783E;
-  --color-gold-light: #C4A468;
-  --color-gold-dark: #7A5C28;
-  --color-charcoal: #111827;
-  --color-charcoal-muted: #4B5563;
-  --color-charcoal-subtle: #6B7280;
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-gold: #B89758;
+  --color-gold-light: #E1B559;
+  --color-gold-dark: #8F7138;
+  --color-charcoal: #000000;
+  --color-charcoal-muted: #4B4B4B;
+  --color-charcoal-subtle: #7B7B7B;
+  --font-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 @layer base {
   html {
     font-family: var(--font-sans);
-    background-color: #FAFAFA;
-    color: #111827;
+    background-color: #FFFFFF;
+    color: #111111;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.012em;
   }
 
-  h1, h2, h3, h4, .font-serif {
-    font-family: var(--font-serif);
-    color: #111827;
+  h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-sans);
+    color: #000000;
+    letter-spacing: -0.025em;
   }
 
   img {
@@ -37,17 +39,17 @@
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar matching ivorra.in */
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
 ::-webkit-scrollbar-thumb {
   background: #D1D5DB;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9B783E;
+  background: #B89758;
 }
