@@ -27,7 +27,7 @@ const MARKETPLACE_LIST: MarketplaceItem[] = [
   {
     name: 'JioMart',
     status: 'available',
-    url: 'https://www.jiomart.com/search/ivorra',
+    url: 'https://www.jiomart.com/products?q=IVORRA',
     logoType: 'jiomart',
     categoryNote: 'Official Retail Partner'
   },

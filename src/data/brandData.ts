@@ -84,7 +84,7 @@ export const MARKETPLACES: Marketplace[] = [
     name: 'JioMart',
     tagline: 'Official Marketplace Listing',
     logo: 'jiomart',
-    url: 'https://www.jiomart.com/search/ivorra',
+    url: 'https://www.jiomart.com/products?q=IVORRA',
     verified: true,
     description: 'Explore verified IVORRA jewellery collections with reliable pan-India delivery on JioMart.',
     features: ['Reliable Delivery', 'Verified Brand Products', 'Pan-India Reach'],
