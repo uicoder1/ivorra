@@ -40,8 +40,13 @@ export const BRAND_INFO = {
   subTagline:
     'Discover the world of IVORRA, where contemporary style meets timeless expression. Explore jewellery designed to complement every moment, every mood and every occasion.',
   foundedYear: 2024,
-  founder: 'Alfiya Ahmed',
-  origin: 'South Delhi – 110014, India',
+  founder: 'Mr. Ahmed',
+  founderTitle: 'Founder & CEO',
+  phone: '8920866006',
+  displayPhone: '+91 89208 66006',
+  email: 'ahmed.legacy05@gmail.com',
+  address: '10203, 4th Floor, Padam Singh Road, Karol Bagh, New Delhi – 110005',
+  origin: 'Karol Bagh, New Delhi – 110005, India',
   officialWebsite: 'https://ivorra.in/',
   instagram: 'https://www.instagram.com/ivorra_official/',
   linkedin: 'https://www.linkedin.com/company/ivorra-luxury/home/',
@@ -50,6 +55,7 @@ export const BRAND_INFO = {
   logoStackedDarkUrl: '/images/logo_dark.webp',
   logoStackedWhiteUrl: '/images/logo_white.webp',
   logoGoldUrl: '/images/logo_gold.webp',
+  founderCard: '/images/founder_card.webp',
   // Official jewellery campaign lifestyle photograph (enhanced high-definition master)
   heroBanner: '/images/hero_banner.webp',
   editorialModel: '/images/about_model.webp',

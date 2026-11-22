@@ -71,9 +71,14 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
             <p className="text-[#A5844E]/80 font-light leading-relaxed max-w-sm mb-4">
               Modern and contemporary fashion jewellery designed for everyday grace, festive celebrations, and personal self-expression.
             </p>
-            <p className="text-[#7A726A] text-[11px]">
-              Registered Base: South Delhi – 110014, India • Active since 2024
-            </p>
+            <div className="space-y-1 text-[#DFD8CA]/90 text-[11px] border-t border-[#36302B] pt-3">
+              <p className="font-semibold text-white">Mr. Ahmed — Founder & CEO</p>
+              <p className="text-[#A5844E]">10203, 4th Floor, Padam Singh Road, Karol Bagh, New Delhi – 110005</p>
+              <p className="text-[#DFD8CA]/80">
+                <a href="tel:8920866006" className="hover:text-[#C6A675] transition-colors">+91 89208 66006</a> • <a href="mailto:ahmed.legacy05@gmail.com" className="hover:text-[#C6A675] transition-colors">ahmed.legacy05@gmail.com</a>
+              </p>
+              <p className="text-[#7A726A] pt-1">Active since 2024 • Made with Pride in India</p>
+            </div>
           </div>
 
           {/* Quick Nav Links */}
@@ -87,6 +92,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
               <li><a href="#collections" className="hover:text-[#C6A675] transition-colors">Our Collections</a></li>
               <li><a href="#marketplaces" className="hover:text-[#C6A675] transition-colors">Marketplaces</a></li>
               <li><a href="#reviews" className="hover:text-[#C6A675] transition-colors">Customer Reviews</a></li>
+              <li><a href="#founder" className="hover:text-[#C6A675] transition-colors">Executive Leadership</a></li>
               <li><a href="#why-ivorra" className="hover:text-[#C6A675] transition-colors">Why IVORRA</a></li>
             </ul>
           </div>

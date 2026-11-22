@@ -20,6 +20,7 @@ export default function Navbar() {
     { label: 'Collections', href: '#collections' },
     { label: 'Marketplaces', href: '#marketplaces' },
     { label: 'Reviews', href: '#reviews' },
+    { label: 'Leadership', href: '#founder' },
     { label: 'Why IVORRA', href: '#why-ivorra' },
     { label: 'Contact', href: '#contact' },
   ]

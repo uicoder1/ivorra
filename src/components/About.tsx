@@ -64,7 +64,7 @@ export default function About() {
               </p>
 
               <p>
-                Founded in 2024 and operating from South Delhi, IVORRA partners with skilled artisans across India to deliver affordable luxury, consistent quality, and reliable craftsmanship to customers nationwide.
+                Founded in 2024 by Mr. Ahmed and operating from Karol Bagh, New Delhi, IVORRA partners with skilled artisans across India to deliver accessible luxury, consistent quality, and reliable craftsmanship to customers nationwide.
               </p>
             </div>
 

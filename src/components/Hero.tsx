@@ -12,7 +12,7 @@ export default function Hero() {
 
   const tractionStats = [
     { label: 'Founded', value: '2024' },
-    { label: 'Headquarters', value: 'South Delhi, India' },
+    { label: 'Headquarters', value: 'Karol Bagh, New Delhi' },
     { label: 'Distribution', value: 'Omnichannel & D2C' },
     { label: 'Core Assortment', value: '6 Curated Lines' },
   ]
