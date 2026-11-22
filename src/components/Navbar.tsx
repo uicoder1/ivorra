@@ -42,32 +42,26 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* IVORRA Brand Logo & Tag */}
+          {/* IVORRA Brand Logo */}
           <a
             href="#hero"
             onClick={(e) => {
               e.preventDefault()
               handleNavClick('#hero')
             }}
-            className="flex items-center gap-3 group cursor-pointer"
+            className="flex items-center shrink-0 group cursor-pointer py-1"
           >
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA Official Logo"
-              className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
-              width={220}
-              height={40}
+              className="h-7 sm:h-8 md:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+              width={180}
+              height={36}
             />
-            <div className="hidden lg:flex items-center gap-2 border-l border-gray-200 pl-3 py-0.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#9B783E]" />
-              <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-500">
-                Brand Showcase
-              </span>
-            </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-7">
+          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navItems.map((item) => (
               <button
                 key={item.label}
@@ -81,7 +75,7 @@ export default function Navbar() {
           </nav>
 
           {/* Direct Store Action */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3 shrink-0">
             <a
               href={BRAND_INFO.officialWebsite}
               target="_blank"
@@ -96,7 +90,7 @@ export default function Navbar() {
           {/* Mobile Hamburger Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gray-900 hover:text-[#9B783E] transition-colors cursor-pointer"
+            className="lg:hidden p-2 text-gray-900 hover:text-[#9B783E] transition-colors cursor-pointer shrink-0"
             aria-label="Toggle navigation menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -106,16 +100,13 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-200 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
+        <div className="lg:hidden bg-white border-b border-gray-200 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
           <div className="flex items-center justify-between pb-4 mb-3 border-b border-gray-100">
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA"
-              className="h-8 w-auto object-contain"
+              className="h-7 w-auto object-contain"
             />
-            <span className="text-[10px] uppercase tracking-widest text-[#9B783E] font-bold">
-              Showcase
-            </span>
           </div>
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => (
