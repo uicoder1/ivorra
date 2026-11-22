@@ -9,7 +9,7 @@ This website serves as a brand showcase highlighting IVORRA's contemporary colle
 ## Key Sections
 
 1. **Hero**: Editorial jewellery lifestyle campaign presentation.
-2. **About IVORRA**: Authentic brand story, Indian craftsmanship, and founding origin (South Delhi, 2020).
+2. **About IVORRA**: Authentic brand story, Indian craftsmanship, and founding origin (South Delhi, 2024).
 3. **Our Collections**: Curated architecture covering Earrings & Jhumkis, Necklaces & Sets, Modern Mangalsutras, Anklets & Payals, Chains & Pendants, and Velvet Storage Cases.
 4. **Marketplace Distribution**: Corporate brand showcase connecting customers directly to verified storefronts.
 5. **The IVORRA Standard**: Four core design pillars and curated product gallery.

@@ -54,7 +54,9 @@ export default function Navbar() {
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA Official Logo"
-              className="h-7 sm:h-8 w-auto object-contain transition-opacity group-hover:opacity-85"
+              className="h-8 sm:h-10 md:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+              width={220}
+              height={40}
             />
             <div className="hidden lg:flex items-center gap-2 border-l border-gray-200 pl-3 py-0.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#9B783E]" />
@@ -105,6 +107,16 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-gray-200 px-6 py-6 shadow-xl animate-in slide-in-from-top-2 duration-200">
+          <div className="flex items-center justify-between pb-4 mb-3 border-b border-gray-100">
+            <img
+              src={BRAND_INFO.logoUrl}
+              alt="IVORRA"
+              className="h-8 w-auto object-contain"
+            />
+            <span className="text-[10px] uppercase tracking-widest text-[#9B783E] font-bold">
+              Showcase
+            </span>
+          </div>
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => (
               <button

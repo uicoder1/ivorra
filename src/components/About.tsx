@@ -3,7 +3,7 @@ import { BRAND_INFO } from '../data/brandData'
 
 export default function About() {
   const brandPillars = [
-    { title: 'Est. 2020', desc: 'Proven operating track record' },
+    { title: 'Est. 2024', desc: 'Proven operating track record' },
     { title: 'Sourced in India', desc: 'Preserving artisan silversmith hubs' },
     { title: 'Omnichannel', desc: 'Multi-marketplace nationwide reach' }
   ]
@@ -64,7 +64,7 @@ export default function About() {
               </p>
 
               <p>
-                Founded in 2020 and operating from South Delhi, IVORRA partners with skilled artisans across India to deliver affordable luxury, consistent quality, and reliable craftsmanship to customers nationwide.
+                Founded in 2024 and operating from South Delhi, IVORRA partners with skilled artisans across India to deliver affordable luxury, consistent quality, and reliable craftsmanship to customers nationwide.
               </p>
             </div>
 

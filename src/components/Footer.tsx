@@ -56,11 +56,11 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
           
           {/* Brand & Address Column */}
           <div className="md:col-span-5">
-            <div className="flex items-center gap-3 mb-3">
+            <div className="flex items-center gap-3 mb-4">
               <img
                 src={BRAND_INFO.logoWhiteUrl}
                 alt="IVORRA"
-                className="h-8 w-auto object-contain"
+                className="h-10 sm:h-12 md:h-14 w-auto object-contain"
                 loading="lazy"
                 decoding="async"
               />
@@ -72,7 +72,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
               Modern and contemporary fashion jewellery designed for everyday grace, festive celebrations, and personal self-expression.
             </p>
             <p className="text-[#7A726A] text-[11px]">
-              Registered Base: South Delhi – 110014, India • Active since 2020
+              Registered Base: South Delhi – 110014, India • Active since 2024
             </p>
           </div>
 
