@@ -13,42 +13,42 @@ const CATEGORIES: CategoryItem[] = [
     id: 'earrings',
     name: 'Earrings & Jhumkis',
     description: 'Hand-finished oxidised jhumkas, chandbalis, and Korean minimalist studs.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_78953e4d-cba5-4551-bb2b-a4cb38b8c8b4.jpg?v=1789473015&width=1000',
+    image: '/images/cat_earrings.webp',
     tag: 'Core Assortment'
   },
   {
     id: 'necklaces',
     name: 'Necklaces & Sets',
     description: 'Luminous mother-of-pearl chokers, pendants, and festive celebration suites.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-2_61c43590-b8ac-4361-b3e2-2c422025c9b8.png?v=1789415071&width=1000',
+    image: '/images/cat_necklaces.webp',
     tag: 'Occasion Wear'
   },
   {
     id: 'mangalsutra',
     name: 'Modern Mangalsutras',
     description: 'Lightweight sacred black beads and contemporary gold-toned pendants for daily wear.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_2bc54689-d51a-4aca-a408-570c1a494eb9.png?v=1789412968&width=1000',
+    image: '/images/cat_mangalsutra.webp',
     tag: 'Modern Ritual'
   },
   {
     id: 'anklets',
     name: 'Anklets & Payals',
     description: 'Silver-plated evil eye nazar payals and delicate charms capturing subtle movement.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-3_a92c3cc3-a205-4d89-a3c7-883059aa7453.jpg?v=1789474056&width=1000',
+    image: '/images/cat_anklets.webp',
     tag: 'Everyday Talisman'
   },
   {
     id: 'chains',
     name: 'Chains & Minimal Accents',
     description: 'Durable stainless steel link chains and minimal pendants for effortless layering.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_c6357497-a0aa-4700-bd0f-9b3c52c57e71.png?v=1789475451&width=1000',
+    image: '/images/cat_chains.webp',
     tag: 'Essential Minimal'
   },
   {
     id: 'organizers',
     name: 'Jewellery Care & Storage',
     description: 'Plush velvet multi-tier cases and folding travel boxes to protect your keepsakes.',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_106815b7-4976-4b53-997a-71119f9306b3.png?v=1789474385&width=1000',
+    image: '/images/cat_organizers.webp',
     tag: 'Gifting & Care'
   }
 ]
@@ -89,6 +89,7 @@ export default function Collections() {
                   alt={item.name}
                   className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-500"
                   loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute top-3.5 left-3.5">
                   <span className="px-3 py-1 bg-white/95 backdrop-blur-xs text-[10px] uppercase tracking-wider font-bold text-gray-900 rounded-full border border-gray-200 shadow-2xs">

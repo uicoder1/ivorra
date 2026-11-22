@@ -89,6 +89,8 @@ export default function Hero() {
             alt="IVORRA Fashion Jewellery Lifestyle Campaign"
             className="w-full h-full object-cover object-center"
             loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
         </motion.div>
 

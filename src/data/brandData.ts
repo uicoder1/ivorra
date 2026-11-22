@@ -45,11 +45,13 @@ export const BRAND_INFO = {
   officialWebsite: 'https://ivorra.in/',
   instagram: 'https://www.instagram.com/ivorra_official/',
   linkedin: 'https://www.linkedin.com/company/ivorra-luxury/home/',
-  logoUrl: 'https://ivorra.in/cdn/shop/files/PNG.png?height=100&v=1789549215',
-  // Official jewellery campaign lifestyle photograph (replaces the black logo circle)
-  heroBanner: 'https://ivorra.in/cdn/shop/files/ChatGPT_Image_Sep_19_2026_02_17_15_AM.png?v=1789764462&width=2400',
-  editorialModel: 'https://ivorra.in/cdn/shop/files/ChatGPT_Image_Sep_19_2026_02_12_23_AM.png?v=1789764171',
-  lifestyleBanner: 'https://ivorra.in/cdn/shop/files/ChatGPT_Image_Sep_17_2026_04_25_35_PM.png?v=1789642579'
+  logoUrl: '/images/logo_dark.webp',
+  logoWhiteUrl: '/images/logo_white.webp',
+  logoGoldUrl: '/images/logo_gold.webp',
+  // Official jewellery campaign lifestyle photograph (enhanced high-definition master)
+  heroBanner: '/images/hero_banner.webp',
+  editorialModel: '/images/about_model.webp',
+  lifestyleBanner: '/images/lifestyle_banner.webp'
 }
 
 export const MARKETPLACES: Marketplace[] = [

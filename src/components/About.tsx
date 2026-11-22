@@ -27,8 +27,9 @@ export default function About() {
               <img
                 src={BRAND_INFO.editorialModel}
                 alt="IVORRA Fashion Jewellery Campaign Portrait"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>

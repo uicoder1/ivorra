@@ -58,9 +58,11 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-3">
               <img
-                src={BRAND_INFO.logoUrl}
+                src={BRAND_INFO.logoWhiteUrl}
                 alt="IVORRA"
-                className="h-8 w-auto object-contain brightness-0 invert opacity-95"
+                className="h-8 w-auto object-contain"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="text-[#C6A675] uppercase tracking-wider text-[11px] mb-3 font-semibold">

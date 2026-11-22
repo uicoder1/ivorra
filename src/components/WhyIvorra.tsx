@@ -27,19 +27,19 @@ const HIGHLIGHTS = [
 const EDITORIAL_GALLERY = [
   {
     title: 'Oxidised Jhumki Curation',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_78953e4d-cba5-4551-bb2b-a4cb38b8c8b4.jpg?v=1789473015&width=800'
+    image: '/images/gallery_jhumki.webp'
   },
   {
     title: 'Luminous Pearl Drop Suite',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1.png?v=1789414399&width=800'
+    image: '/images/gallery_pearl_choker.webp'
   },
   {
     title: 'Silver Plated Nazar Payal',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-3_a92c3cc3-a205-4d89-a3c7-883059aa7453.jpg?v=1789474056&width=800'
+    image: '/images/gallery_silver_payal.webp'
   },
   {
-    title: 'Modern Sacred Mangalsutra',
-    image: 'https://ivorra.in/cdn/shop/files/IMAGE-1_2bc54689-d51a-4aca-a408-570c1a494eb9.png?v=1789412968&width=800'
+    title: 'Modern Gold Heart Pendant',
+    image: '/images/gallery_heart_pendant.webp'
   }
 ]
 
@@ -106,6 +106,7 @@ export default function WhyIvorra() {
                 alt={item.title}
                 className="w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-4">
                 <span className="text-xs text-white font-semibold tracking-wide">
