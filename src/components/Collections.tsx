@@ -10,46 +10,46 @@ interface CategoryItem {
 
 const CATEGORIES: CategoryItem[] = [
   {
-    id: 'earrings',
-    name: 'Earrings & Jhumkis',
-    description: 'Hand-finished oxidised jhumkas, chandbalis, and Korean minimalist studs.',
-    image: '/images/cat_earrings.webp',
-    tag: 'Core Assortment'
+    id: 'korean',
+    name: 'Korean Minimalist & Floral Edit',
+    description: 'Dainty pastel petals, cherry blossoms, gold bows, enamel tulips, and pearl drop studs.',
+    image: '/images/korean_design_floral.webp',
+    tag: 'Trending Korean Design'
+  },
+  {
+    id: 'jhumkis',
+    name: 'Oxidised Silver & Tribal Jhumkis',
+    description: 'Handcrafted oxidised chandbalis, dome jhumkas, and geometric stone dangles in multi-pair sets.',
+    image: '/images/oxidised_jhumki_set.webp',
+    tag: 'Artisan Heritage'
+  },
+  {
+    id: 'folding-boxes',
+    name: 'Folding Velvet Box Curations',
+    description: 'Signature 4-tier red velvet folding travel cases packed with curated daily-wear earring sets.',
+    image: '/images/velvet_box_display.webp',
+    tag: 'Signature Travel Set'
   },
   {
     id: 'necklaces',
-    name: 'Necklaces & Sets',
-    description: 'Luminous mother-of-pearl chokers, pendants, and festive celebration suites.',
+    name: 'Necklaces & Pearl Suites',
+    description: 'Luminous mother-of-pearl chokers, layered pendants, and celebration festive suites.',
     image: '/images/cat_necklaces.webp',
     tag: 'Occasion Wear'
   },
   {
     id: 'mangalsutra',
-    name: 'Modern Mangalsutras',
-    description: 'Lightweight sacred black beads and contemporary gold-toned pendants for daily wear.',
+    name: 'Modern Sacred Mangalsutras',
+    description: 'Lightweight sacred black beads and contemporary gold-toned pendants for daily grace.',
     image: '/images/cat_mangalsutra.webp',
     tag: 'Modern Ritual'
   },
   {
     id: 'anklets',
-    name: 'Anklets & Payals',
+    name: 'Anklets & Silver Nazar Payals',
     description: 'Silver-plated evil eye nazar payals and delicate charms capturing subtle movement.',
     image: '/images/cat_anklets.webp',
     tag: 'Everyday Talisman'
-  },
-  {
-    id: 'chains',
-    name: 'Chains & Minimal Accents',
-    description: 'Durable stainless steel link chains and minimal pendants for effortless layering.',
-    image: '/images/cat_chains.webp',
-    tag: 'Essential Minimal'
-  },
-  {
-    id: 'organizers',
-    name: 'Jewellery Care & Storage',
-    description: 'Plush velvet multi-tier cases and folding travel boxes to protect your keepsakes.',
-    image: '/images/cat_organizers.webp',
-    tag: 'Gifting & Care'
   }
 ]
 

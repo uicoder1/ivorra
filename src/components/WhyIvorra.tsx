@@ -26,20 +26,20 @@ const HIGHLIGHTS = [
 
 const EDITORIAL_GALLERY = [
   {
-    title: 'Oxidised Jhumki Curation',
-    image: '/images/gallery_jhumki.webp'
+    title: 'Korean Minimalist Stud Edit',
+    image: '/images/korean_minimalist_studs.webp'
   },
   {
-    title: 'Luminous Pearl Drop Suite',
-    image: '/images/gallery_pearl_choker.webp'
+    title: 'Tribal Jhumki Folding Suite',
+    image: '/images/oxidised_jhumki_set.webp'
   },
   {
-    title: 'Silver Plated Nazar Payal',
-    image: '/images/gallery_silver_payal.webp'
+    title: 'Folding Velvet Box Showcase',
+    image: '/images/velvet_box_display.webp'
   },
   {
-    title: 'Modern Gold Heart Pendant',
-    image: '/images/gallery_heart_pendant.webp'
+    title: 'Garden Curation Lifestyle',
+    image: '/images/curated_combo_garden.webp'
   }
 ]
 

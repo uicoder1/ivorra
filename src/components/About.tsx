@@ -60,7 +60,7 @@ export default function About() {
               </p>
 
               <p>
-                Our collections bridge heritage oxidised jhumkas, radiant pearl chokers, modern mangalsutras, silver-plated nazar payals, and everyday minimal chains. Each piece is designed to transition seamlessly from workdays to festive celebrations.
+                Our collections bridge trending Korean minimalist and floral edits, heritage oxidised jhumkas, radiant pearl chokers, modern mangalsutras, and silver-plated nazar payals. Each piece is designed to transition seamlessly from workdays to festive celebrations.
               </p>
 
               <p>
