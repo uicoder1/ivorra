@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Collections from './components/Collections'
 import Marketplaces from './components/Marketplaces'
+import CustomerReviews from './components/CustomerReviews'
 import WhyIvorra from './components/WhyIvorra'
 import Footer from './components/Footer'
 import InquiryModal from './components/InquiryModal'
@@ -32,7 +33,10 @@ export default function App() {
         {/* Section 4: Marketplace Presence */}
         <Marketplaces />
 
-        {/* Section 5: Why IVORRA (Designed for Every Occasion: 4 Highlights + Editorial Gallery) */}
+        {/* Section 5: Customer Reviews & Marketplace Validation */}
+        <CustomerReviews />
+
+        {/* Section 6: Why IVORRA (Designed for Every Occasion: 4 Highlights + Editorial Gallery) */}
         <WhyIvorra />
       </main>
 

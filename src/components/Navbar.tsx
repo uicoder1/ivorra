@@ -19,6 +19,7 @@ export default function Navbar() {
     { label: 'About', href: '#about' },
     { label: 'Collections', href: '#collections' },
     { label: 'Marketplaces', href: '#marketplaces' },
+    { label: 'Reviews', href: '#reviews' },
     { label: 'Why IVORRA', href: '#why-ivorra' },
     { label: 'Contact', href: '#contact' },
   ]

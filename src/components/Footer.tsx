@@ -86,6 +86,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
               <li><a href="#about" className="hover:text-[#C6A675] transition-colors">About IVORRA</a></li>
               <li><a href="#collections" className="hover:text-[#C6A675] transition-colors">Our Collections</a></li>
               <li><a href="#marketplaces" className="hover:text-[#C6A675] transition-colors">Marketplaces</a></li>
+              <li><a href="#reviews" className="hover:text-[#C6A675] transition-colors">Customer Reviews</a></li>
               <li><a href="#why-ivorra" className="hover:text-[#C6A675] transition-colors">Why IVORRA</a></li>
             </ul>
           </div>
