@@ -56,9 +56,9 @@ export default function Navbar() {
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA Official Logo"
-              className="h-7 sm:h-8 md:h-9 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
-              width={180}
-              height={36}
+              className="h-[22px] sm:h-[25px] md:h-7 w-auto object-contain transition-transform duration-200 group-hover:scale-102"
+              width={140}
+              height={28}
             />
           </a>
 
@@ -107,7 +107,7 @@ export default function Navbar() {
             <img
               src={BRAND_INFO.logoUrl}
               alt="IVORRA"
-              className="h-7 w-auto object-contain"
+              className="h-6 w-auto object-contain"
             />
           </div>
           <div className="flex flex-col space-y-3">
@@ -115,7 +115,7 @@ export default function Navbar() {
               <button
                 key={item.label}
                 onClick={() => handleNavClick(item.href)}
-                className="text-left text-xs uppercase tracking-widest font-bold text-gray-900 hover:text-[#9B783E] py-2 border-b border-gray-100"
+                className="text-left text-xs uppercase tracking-widest font-bold text-gray-900 hover:text-[#B89758] py-2 border-b border-gray-100"
               >
                 {item.label}
               </button>
@@ -124,7 +124,7 @@ export default function Navbar() {
               href={BRAND_INFO.officialWebsite}
               target="_blank"
               rel="noopener noreferrer"
-              className="pt-3 text-xs uppercase tracking-wider font-bold text-[#9B783E] flex items-center justify-between"
+              className="pt-3 text-xs uppercase tracking-wider font-bold text-[#B89758] flex items-center justify-between"
             >
               <span>Visit Official Store (ivorra.in)</span>
               <ArrowUpRight className="w-4 h-4" />

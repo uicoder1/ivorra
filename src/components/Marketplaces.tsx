@@ -123,8 +123,8 @@ export default function Marketplaces() {
                     </div>
                   )}
                   {item.logoType === 'ivorra' && (
-                    <div className="font-serif font-medium text-2xl sm:text-3xl text-gray-950 tracking-wider">
-                      IVORRA<span className="text-xs text-[#9B783E] ml-1 font-sans font-bold">.in</span>
+                    <div className="font-bold text-2xl sm:text-3xl text-black tracking-tight">
+                      IVORRA<span className="text-xs text-[#B89758] ml-1 font-bold">.in</span>
                     </div>
                   )}
                   {item.logoType === 'myntra' && (

@@ -60,7 +60,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
               <img
                 src={BRAND_INFO.logoWhiteUrl}
                 alt="IVORRA"
-                className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                className="h-7 sm:h-8 md:h-9 w-auto object-contain"
                 loading="lazy"
                 decoding="async"
               />
