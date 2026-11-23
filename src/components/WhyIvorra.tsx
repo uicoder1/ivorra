@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Sparkles, Layers, HeartHandshake, Calendar } from 'lucide-react'
 
@@ -26,26 +27,78 @@ const HIGHLIGHTS = [
 
 const EDITORIAL_GALLERY = [
   {
-    title: 'Korean Minimalist Stud Edit',
-    image: '/images/korean_minimalist_studs.webp'
+    title: 'Korean Pastel & Floral Edit',
+    subtitle: 'Signature 4-Tier Velvet Folding Suite',
+    image: '/images/gallery_korean_pastels.webp'
   },
   {
-    title: 'Tribal Jhumki Folding Suite',
-    image: '/images/oxidised_jhumki_set.webp'
+    title: 'Tribal Jhumki & Chandbali Suite',
+    subtitle: 'Hand-Curated Oxidised Silver Collection',
+    image: '/images/gallery_tribal_jhumkis.webp'
   },
   {
-    title: 'Folding Velvet Box Showcase',
-    image: '/images/velvet_box_display.webp'
+    title: 'Quad Curation Travel Showcase',
+    subtitle: '4-in-1 Compact Velvet Folding Trays',
+    image: '/images/gallery_curation_quad.webp'
   },
   {
-    title: 'Garden Curation Lifestyle',
-    image: '/images/curated_combo_garden.webp'
+    title: 'Heritage Gemstone & Jhumki Box',
+    subtitle: 'Royal Emerald, Sapphire & Silver Drops',
+    image: '/images/gallery_gemstone_heritage.webp'
   }
 ]
 
+// Duplicate gallery items for a seamless, continuous infinite loop
+const SLIDES = [...EDITORIAL_GALLERY, ...EDITORIAL_GALLERY]
+
 export default function WhyIvorra() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isTransitioning, setIsTransitioning] = useState(true)
+  const [cardStep, setCardStep] = useState(0)
+  const cardRef = useRef<HTMLDivElement>(null)
+
+  // Measure card width + gap dynamically
+  useEffect(() => {
+    const measureWidth = () => {
+      if (cardRef.current) {
+        setCardStep(cardRef.current.offsetWidth + 24) // 24px = gap-6
+      }
+    }
+    measureWidth()
+    window.addEventListener('resize', measureWidth)
+    return () => window.removeEventListener('resize', measureWidth)
+  }, [])
+
+  // Automatically move from right to left every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true)
+      setCurrentIndex((prev) => prev + 1)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [])
+
+  // Seamless snap back to index 0 when reaching the end of the original list
+  useEffect(() => {
+    if (currentIndex === EDITORIAL_GALLERY.length) {
+      const snapTimer = setTimeout(() => {
+        setIsTransitioning(false)
+        setCurrentIndex(0)
+      }, 700) // matches 700ms transition duration
+      return () => clearTimeout(snapTimer)
+    }
+  }, [currentIndex])
+
+  const activeDot = currentIndex % EDITORIAL_GALLERY.length
+
+  const handleDotClick = (i: number) => {
+    setIsTransitioning(true)
+    setCurrentIndex(i)
+  }
+
   return (
-    <section id="why-ivorra" className="py-20 sm:py-28 bg-[#FAFAFA] border-t border-gray-200">
+    <section id="why-ivorra" className="py-20 sm:py-28 bg-[#FAFAFA] border-t border-gray-200 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -90,30 +143,53 @@ export default function WhyIvorra() {
           })}
         </div>
 
-        {/* Editorial Image Gallery */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-          {EDITORIAL_GALLERY.map((item, index) => (
-            <motion.div
-              key={item.title}
-              initial={{ opacity: 0, scale: 0.97 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.06 }}
-              className="group relative rounded-2xl overflow-hidden bg-white border border-gray-200 aspect-[4/5] shadow-xs"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-500"
-                loading="lazy"
-                decoding="async"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-4">
-                <span className="text-xs text-white font-semibold tracking-wide">
-                  {item.title}
-                </span>
+        {/* Editorial Auto-Scrolling Image Gallery (Single line, right-to-left every 3s) */}
+        <div className="overflow-hidden py-2 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+          <div
+            style={{
+              transform: cardStep > 0 ? `translateX(-${currentIndex * cardStep}px)` : 'none',
+              transition: isTransitioning ? 'transform 700ms cubic-bezier(0.25, 1, 0.5, 1)' : 'none',
+            }}
+            className="flex gap-6 will-change-transform"
+          >
+            {SLIDES.map((item, idx) => (
+              <div
+                key={`${item.title}-${idx}`}
+                ref={idx === 0 ? cardRef : undefined}
+                className="group relative rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-gray-200 w-[78vw] sm:w-[300px] lg:w-[330px] shrink-0 aspect-[2/3] shadow-xs"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover object-center group-hover:scale-104 transition-transform duration-500"
+                  loading={idx < 4 ? "eager" : "lazy"}
+                  decoding="async"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-5 pointer-events-none">
+                  <span className="text-[10px] uppercase tracking-widest text-[#B89758] font-bold mb-1">
+                    {item.subtitle}
+                  </span>
+                  <h4 className="text-base sm:text-lg text-white font-bold tracking-tight leading-snug">
+                    {item.title}
+                  </h4>
+                </div>
               </div>
-            </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Dot Indicators */}
+        <div className="flex justify-center items-center gap-2 mt-6">
+          {EDITORIAL_GALLERY.map((item, i) => (
+            <button
+              key={item.title}
+              onClick={() => handleDotClick(i)}
+              className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                i === activeDot ? 'w-8 bg-[#B89758]' : 'w-2 bg-gray-300 hover:bg-gray-400'
+              }`}
+              aria-label={`Jump to image ${i + 1}`}
+              title={item.title}
+            />
           ))}
         </div>
 
