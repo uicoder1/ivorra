@@ -57,7 +57,7 @@ export default function InquiryModal({ isOpen, onClose, onSuccess, initialTopic 
       return
     }
 
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '87438b1c-697f-4181-96d0-c57719c564cc'
     if (!accessKey) {
       setErrorMessage('Web3Forms access key is missing. Please set VITE_WEB3FORMS_ACCESS_KEY.')
       return

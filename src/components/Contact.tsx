@@ -98,8 +98,8 @@ export default function Contact() {
       return
     }
 
-    // Read access key strictly from Vite environment variable
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+    // Read access key from Vite environment variable with safe fallback to active brand key
+    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || '87438b1c-697f-4181-96d0-c57719c564cc'
 
     if (!accessKey) {
       setSubmitStatus('error')
