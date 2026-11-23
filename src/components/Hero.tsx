@@ -86,13 +86,13 @@ export default function Hero() {
         >
           <img
             src={BRAND_INFO.heroBanner}
-            alt="IVORRA Fashion Jewellery Lifestyle Campaign"
+            alt="IVORRA: Signature Jewellery Collection Showcase"
             className="w-full h-auto block object-contain"
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width={2048}
-            height={768}
+            width={1996}
+            height={758}
           />
         </motion.div>
 
