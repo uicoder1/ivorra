@@ -28,28 +28,24 @@ const HIGHLIGHTS = [
 const EDITORIAL_GALLERY = [
   {
     title: 'Korean Pastel & Floral Edit',
-    subtitle: 'Signature 4-Tier Velvet Folding Suite',
     image: '/images/gallery_korean_pastels.webp'
   },
   {
     title: 'Tribal Jhumki & Chandbali Suite',
-    subtitle: 'Hand-Curated Oxidised Silver Collection',
     image: '/images/gallery_tribal_jhumkis.webp'
   },
   {
     title: 'Quad Curation Travel Showcase',
-    subtitle: '4-in-1 Compact Velvet Folding Trays',
     image: '/images/gallery_curation_quad.webp'
   },
   {
     title: 'Heritage Gemstone & Jhumki Box',
-    subtitle: 'Royal Emerald, Sapphire & Silver Drops',
     image: '/images/gallery_gemstone_heritage.webp'
   }
 ]
 
 // Duplicate gallery items for a seamless, continuous infinite loop
-const SLIDES = [...EDITORIAL_GALLERY, ...EDITORIAL_GALLERY]
+const SLIDES = [...EDITORIAL_GALLERY, ...EDITORIAL_GALLERY, ...EDITORIAL_GALLERY]
 
 export default function WhyIvorra() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -61,7 +57,8 @@ export default function WhyIvorra() {
   useEffect(() => {
     const measureWidth = () => {
       if (cardRef.current) {
-        setCardStep(cardRef.current.offsetWidth + 24) // 24px = gap-6
+        const gap = window.innerWidth < 640 ? 16 : 24 // gap-4 on mobile (16px), gap-6 on sm+ (24px)
+        setCardStep(cardRef.current.offsetWidth + gap)
       }
     }
     measureWidth()
@@ -143,20 +140,20 @@ export default function WhyIvorra() {
           })}
         </div>
 
-        {/* Editorial Auto-Scrolling Image Gallery (Single line, right-to-left every 3s) */}
+        {/* Editorial Auto-Scrolling Image Gallery (Single line, right-to-left every 3s, original 4:5 aspect ratio & size) */}
         <div className="overflow-hidden py-2 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
           <div
             style={{
               transform: cardStep > 0 ? `translateX(-${currentIndex * cardStep}px)` : 'none',
               transition: isTransitioning ? 'transform 700ms cubic-bezier(0.25, 1, 0.5, 1)' : 'none',
             }}
-            className="flex gap-6 will-change-transform"
+            className="flex gap-4 sm:gap-6 will-change-transform"
           >
             {SLIDES.map((item, idx) => (
               <div
                 key={`${item.title}-${idx}`}
                 ref={idx === 0 ? cardRef : undefined}
-                className="group relative rounded-2xl sm:rounded-3xl overflow-hidden bg-white border border-gray-200 w-[78vw] sm:w-[300px] lg:w-[330px] shrink-0 aspect-[2/3] shadow-xs"
+                className="group relative rounded-2xl overflow-hidden bg-white border border-gray-200 w-[46vw] sm:w-[220px] lg:w-[254px] shrink-0 aspect-[4/5] shadow-xs"
               >
                 <img
                   src={item.image}
@@ -165,13 +162,10 @@ export default function WhyIvorra() {
                   loading={idx < 4 ? "eager" : "lazy"}
                   decoding="async"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-5 pointer-events-none">
-                  <span className="text-[10px] uppercase tracking-widest text-[#B89758] font-bold mb-1">
-                    {item.subtitle}
-                  </span>
-                  <h4 className="text-base sm:text-lg text-white font-bold tracking-tight leading-snug">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-950/80 via-transparent to-transparent flex items-end p-3.5 sm:p-4 pointer-events-none">
+                  <span className="text-xs sm:text-sm text-white font-semibold tracking-wide leading-snug drop-shadow-xs">
                     {item.title}
-                  </h4>
+                  </span>
                 </div>
               </div>
             ))}
