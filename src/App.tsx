@@ -7,6 +7,7 @@ import Marketplaces from './components/Marketplaces'
 import CustomerReviews from './components/CustomerReviews'
 import Founder from './components/Founder'
 import WhyIvorra from './components/WhyIvorra'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import InquiryModal from './components/InquiryModal'
 import Toast from './components/Toast'
@@ -42,6 +43,9 @@ export default function App() {
 
         {/* Why IVORRA (Designed for Every Occasion: 4 Highlights + Editorial Gallery) */}
         <WhyIvorra />
+
+        {/* Section 6: Official Brand Enquiry & Contact */}
+        <Contact />
       </main>
 
       {/* Section 6: Contact and Footer */}

@@ -13,7 +13,7 @@ export default function Footer({ onOpenInquiry }: FooterProps) {
   const verifiedStores = MARKETPLACES.filter(m => m.verified)
 
   return (
-    <footer id="contact" className="bg-[#121212] text-[#F8F5EF] pt-20 pb-12 border-t border-neutral-800">
+    <footer id="footer" className="bg-[#121212] text-[#F8F5EF] pt-20 pb-12 border-t border-neutral-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Final CTA Block */}
