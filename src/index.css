@@ -53,3 +53,12 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #B89758;
 }
+
+/* Hide scrollbar utility for single-line auto-scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
