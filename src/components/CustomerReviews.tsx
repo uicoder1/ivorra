@@ -165,7 +165,7 @@ export default function CustomerReviews() {
           </div>
           <div>
             <p className="text-2xl sm:text-3xl font-bold text-black tracking-tight mb-0.5">
-              100+
+              500+
             </p>
             <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-gray-500 font-semibold">
               Verified Ratings
