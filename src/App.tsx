@@ -6,6 +6,7 @@ import Collections from './components/Collections'
 import Marketplaces from './components/Marketplaces'
 import CustomerReviews from './components/CustomerReviews'
 import Founder from './components/Founder'
+import EventsAndCollabs from './components/EventsAndCollabs'
 import WhyIvorra from './components/WhyIvorra'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -40,6 +41,9 @@ export default function App() {
 
         {/* Executive Leadership & Founder's Desk */}
         <Founder onOpenInquiry={() => setIsInquiryOpen(true)} />
+
+        {/* Events & Collaborations */}
+        <EventsAndCollabs />
 
         {/* Why IVORRA (Designed for Every Occasion: 4 Highlights + Editorial Gallery) */}
         <WhyIvorra />
