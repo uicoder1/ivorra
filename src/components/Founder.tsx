@@ -56,11 +56,11 @@ const LEADERS: LeaderProfile[] = [
 
 export default function Founder({ onOpenInquiry }: FounderProps) {
   return (
-    <section id="founder" className="py-16 sm:py-24 bg-white border-t border-gray-200">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="founder" className="py-20 sm:py-28 bg-white border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <div className="inline-flex items-center gap-2 mb-3">
             <span className="w-2 h-2 rounded-full bg-[#B89758]" />
             <p className="text-[11px] uppercase tracking-[0.22em] text-[#B89758] font-bold">
@@ -76,7 +76,7 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
         </div>
 
         {/* Side-by-Side Horizontal Leadership Profiles */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
           {LEADERS.map((leader, index) => (
             <motion.div
               key={leader.id}
@@ -84,12 +84,12 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55, delay: index * 0.1 }}
-              className="flex flex-col justify-between p-4 sm:p-5 rounded-2xl bg-[#FAFAFA] border border-gray-200 shadow-xs"
+              className="flex flex-col justify-between p-5 sm:p-7 rounded-3xl bg-[#FAFAFA] border border-gray-200 shadow-xs"
             >
               <div>
                 {/* Official Executive Card Visual */}
-                <div className="relative rounded-xl overflow-hidden shadow-md border border-gray-900 bg-[#161413] p-1.5 sm:p-2 group mb-4">
-                  <div className="relative rounded-lg overflow-hidden border border-amber-900/40">
+                <div className="relative rounded-2xl overflow-hidden shadow-md border border-gray-900 bg-[#161413] p-2 sm:p-2.5 group mb-6">
+                  <div className="relative rounded-xl overflow-hidden border border-amber-900/40">
                     <img
                       src={leader.cardImage}
                       alt={leader.cardAlt}
@@ -100,81 +100,79 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
                   </div>
 
                   {/* Verified Executive Credential Badge */}
-                  <div className="mt-2 px-2.5 py-1.5 flex items-center justify-between text-[11px] text-amber-200/90 bg-black/40 rounded-lg border border-white/5">
-                    <div className="flex items-center gap-1.5">
-                      <ShieldCheck className="w-3.5 h-3.5 text-[#B89758]" />
+                  <div className="mt-2.5 px-3 py-2 flex items-center justify-between text-xs text-amber-200/90 bg-black/40 rounded-xl border border-white/5">
+                    <div className="flex items-center gap-2">
+                      <ShieldCheck className="w-4 h-4 text-[#B89758]" />
                       <span className="font-semibold tracking-wide text-white">Verified Founder Identity</span>
                     </div>
-                    <span className="text-[9px] uppercase tracking-widest text-[#B89758] font-bold">
+                    <span className="text-[10px] uppercase tracking-widest text-[#B89758] font-bold">
                       {leader.locationTag}
                     </span>
                   </div>
                 </div>
 
                 {/* Name & Title */}
-                <div className="mb-3">
-                  <span className="px-2.5 py-0.5 text-[9px] uppercase tracking-wider font-bold rounded-full bg-amber-50 text-[#B89758] border border-amber-200">
+                <div className="mb-4">
+                  <span className="px-3 py-1 text-[10px] uppercase tracking-wider font-bold rounded-full bg-amber-50 text-[#B89758] border border-amber-200">
                     {leader.roleBadge}
                   </span>
-                  <h3 className="text-xl sm:text-2xl text-black font-bold tracking-tight mt-2 mb-0.5">
+                  <h3 className="text-2xl sm:text-3xl text-black font-bold tracking-tight mt-3 mb-1">
                     {leader.name}
                   </h3>
-                  <p className="text-[10px] uppercase tracking-widest text-[#B89758] font-bold">
+                  <p className="text-[11px] uppercase tracking-widest text-[#B89758] font-bold">
                     IVORRA Fashion Jewellery • Active since {BRAND_INFO.foundedYear}
                   </p>
                 </div>
 
                 {/* Founder's Vision Quote */}
-                <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-gray-200 mb-4 relative">
-                  <span className="text-2xl font-serif text-[#B89758] absolute top-1.5 left-3 select-none opacity-40">“</span>
-                  <p className="text-xs text-gray-800 leading-relaxed font-normal pt-1.5 italic">
+                <div className="p-4 sm:p-5 rounded-2xl bg-white border border-gray-200 mb-5 relative">
+                  <span className="text-3xl font-serif text-[#B89758] absolute top-2 left-3.5 select-none opacity-40">“</span>
+                  <p className="text-xs sm:text-sm text-gray-800 leading-relaxed font-normal pt-2 italic">
                     {leader.quote}
                   </p>
                 </div>
 
                 {/* Direct Official Corporate Details */}
-                <div className="space-y-2 mb-5 text-[11px] text-gray-700">
-                  <div className="flex items-start gap-2.5 p-2.5 rounded-xl bg-white border border-gray-200 shadow-2xs">
-                    <MapPin className="w-3.5 h-3.5 text-[#B89758] shrink-0 mt-0.5" />
+                <div className="space-y-3 mb-6 text-xs sm:text-sm text-gray-700">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white border border-gray-200 shadow-2xs">
+                    <MapPin className="w-4 h-4 text-[#B89758] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-bold text-gray-950 block">{leader.officeLabel}</span>
-                      <span className="text-gray-600 leading-tight block">
+                      <span className="font-bold text-gray-950 block mb-0.5">{leader.officeLabel}</span>
+                      <span className="text-gray-700 leading-snug block">
                         {leader.address}
                       </span>
                     </div>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    <a
-                      href={`tel:${leader.phone}`}
-                      className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all"
-                    >
-                      <Phone className="w-3.5 h-3.5 text-[#B89758] shrink-0" />
-                      <div>
-                        <span className="font-bold text-gray-950 block">Direct Telephone</span>
-                        <span className="text-gray-600">{leader.displayPhone}</span>
-                      </div>
-                    </a>
+                  <a
+                    href={`tel:${leader.phone}`}
+                    className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all"
+                  >
+                    <Phone className="w-4 h-4 text-[#B89758] shrink-0" />
+                    <div>
+                      <span className="font-bold text-gray-950 block">Direct Telephone</span>
+                      <span className="text-gray-700">{leader.displayPhone}</span>
+                    </div>
+                  </a>
 
-                    <a
-                      href={`mailto:${leader.email}`}
-                      className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all min-w-0"
-                    >
-                      <Mail className="w-3.5 h-3.5 text-[#B89758] shrink-0" />
-                      <div className="min-w-0">
-                        <span className="font-bold text-gray-950 block">Official Email</span>
-                        <span className="text-gray-600 truncate block">{leader.email}</span>
-                      </div>
-                    </a>
-                  </div>
+                  <a
+                    href={`mailto:${leader.email}`}
+                    className="flex items-center gap-3 p-3.5 rounded-xl bg-white border border-gray-200 hover:border-gray-950 hover:shadow-xs transition-all"
+                  >
+                    <Mail className="w-4 h-4 text-[#B89758] shrink-0" />
+                    <div className="break-all">
+                      <span className="font-bold text-gray-950 block">Official Email</span>
+                      <span className="text-gray-700">{leader.email}</span>
+                    </div>
+                  </a>
                 </div>
               </div>
 
               {/* Action CTA Buttons */}
-              <div className="flex flex-col sm:flex-row items-center gap-2.5 pt-1">
+              <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
                 <button
                   onClick={onOpenInquiry}
-                  className="w-full sm:w-auto flex-1 px-4 py-2.5 bg-gray-950 hover:bg-[#B89758] text-white text-[10px] uppercase tracking-widest font-semibold rounded-full transition-colors cursor-pointer shadow-sm text-center"
+                  className="w-full sm:w-auto flex-1 px-6 py-3 bg-gray-950 hover:bg-[#B89758] text-white text-xs uppercase tracking-widest font-semibold rounded-full transition-colors cursor-pointer shadow-sm text-center"
                 >
                   Executive & Investor Enquiry
                 </button>
@@ -183,13 +181,13 @@ export default function Founder({ onOpenInquiry }: FounderProps) {
                   href={BRAND_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto px-4 py-2.5 border border-gray-300 hover:border-gray-950 bg-white text-gray-900 text-[10px] uppercase tracking-widest font-semibold rounded-full transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                  className="w-full sm:w-auto px-6 py-3 border border-gray-300 hover:border-gray-950 bg-white text-gray-900 text-xs uppercase tracking-widest font-semibold rounded-full transition-colors flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <svg className="w-3 h-3 fill-current text-[#B89758]" viewBox="0 0 24 24">
+                  <svg className="w-3.5 h-3.5 fill-current text-[#B89758]" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                   <span>Follow @ivorra_official</span>
-                  <ArrowUpRight className="w-3 h-3 text-gray-400" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-gray-400" />
                 </a>
               </div>
             </motion.div>
