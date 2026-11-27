@@ -23,7 +23,7 @@ const EVENTS_AND_COLLABS: EventItem[] = [
   {
     id: 'amazon-delegate-badge',
     tag: 'Official Delegate',
-    title: 'Director — IVORRA Pass',
+    title: 'Director — IVORRA',
     subtitle: 'Official Director delegate accreditation at the Amazon Ads & Global Selling Summit 2026.',
     image: '/images/event_amazon_badge.webp',
     objectPos: 'object-center',
