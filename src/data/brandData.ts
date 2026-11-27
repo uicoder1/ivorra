@@ -56,7 +56,6 @@ export const BRAND_INFO = {
   logoStackedWhiteUrl: '/images/logo_white.webp',
   logoGoldUrl: '/images/logo_gold.webp',
   founderCard: '/images/founder_card.webp',
-  coFounderCard: '/images/co_founder_card.webp',
   // Official jewellery campaign lifestyle photograph (enhanced high-definition master)
   heroBanner: '/images/hero_banner.webp',
   editorialModel: '/images/about_model.webp',
